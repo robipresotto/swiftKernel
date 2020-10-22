@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eu
+
 # Install MiniConda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh -b -p /tmp/miniconda3 && /
 
@@ -7,7 +9,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && ba
 git clone https://github.com/google/swift-jupyter.git && /
 cd swift-jupyter && /
 wget -O swift-tensorflow.tar.gz https://storage.googleapis.com/swift-tensorflow-artifacts/nightlies/latest/swift-tensorflow-DEVELOPMENT-ubuntu18.04.tar.gz && mkdir swift-toolchain && /
-tar -xvf swift-tensorflow.tar.gz /swift-toolchain && /
+tar -xvf swift-tensorflow.tar.gz swift-toolchain && /
 
 # Creates the new tensorflow env
 conda create -n swift-tensorflow python=3.6 --yes && /
