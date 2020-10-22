@@ -1,5 +1,4 @@
 # Swift Kernel for AWS SageMaker
----
 
 ### Getting started
 1. Open the SageMaker Studio: File > New Launcher
@@ -8,5 +7,5 @@
 4. Run the command bellow
 
 ```
-git clone ... && cd swiftKernel && bash run.sh
+git clone https://github.com/robipresotto/swiftKernel.git && cd swiftKernel && bash run.sh
 ```
