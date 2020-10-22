@@ -7,5 +7,7 @@
 4. Run the command bellow
 
 ```
-git clone https://github.com/robipresotto/swiftKernel.git && cd swiftKernel && bash run.sh
+git clone https://github.com/robipresotto/swiftKernel.git && /
+cd swiftKernel && /
+bash run.sh
 ```
