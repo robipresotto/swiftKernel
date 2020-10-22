@@ -16,6 +16,7 @@ mkdir swift-toolchain && \
 tar -zxvf swift-tensorflow.tar.gz -C swift-toolchain && \
 
 # Creates the new tensorflow env
+conda init bash && \
 conda create -n swift-tensorflow python=3.6 --yes && \
 conda activate swift-tensorflow --yes && \
 conda install jupyter numpy matplotlib --yes && \
