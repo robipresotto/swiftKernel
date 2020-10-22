@@ -9,5 +9,5 @@
 ```
 git clone https://github.com/robipresotto/swiftKernel.git && \
 cd swiftKernel && \
-bash run.sh
+bash -i run.sh
 ```
