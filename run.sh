@@ -8,8 +8,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && sh
 # Clone swift jupyter repo
 git clone https://github.com/google/swift-jupyter.git && cd swift-jupyter && \
 wget -O ./swift-tensorflow.tar.gz https://storage.googleapis.com/swift-tensorflow-artifacts/nightlies/latest/swift-tensorflow-DEVELOPMENT-ubuntu18.04.tar.gz && \
-mkdir swift-toolchain && \
-tar -zxvf swift-tensorflow.tar.gz -C swift-toolchain && \
+mkdir swift-toolchain && tar -zxvf swift-tensorflow.tar.gz -C swift-toolchain && \
 
 # Creates the new tensorflow env
 conda update -n base -c defaults conda --yes && \
@@ -25,7 +24,7 @@ python register.py \
 --use-conda-shared-libs \
 --swift-toolchain ./swift-toolchain && \
 
-# Export env
+# Export conda env
 conda env export --name swift-toolchain --file ~/swiftKernel.yml && \
 
 # Cleanup temp files
