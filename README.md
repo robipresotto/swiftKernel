@@ -2,7 +2,7 @@
 
 ### Getting started
 1. Open the SageMaker Studio: File > New Launcher
-2. Select the SageMaker image (TensorFlow 2+ GPU) to launch the activity
+2. Select the SageMaker image (TensorFlow CPU)
 3. Select Image Terminal
 4. Run the command bellow to create the swift kernel env
 ```
