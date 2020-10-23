@@ -3,7 +3,7 @@
 set -eu
 
 # Install MiniConda
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && sh Miniconda3-latest-Linux-x86_64.sh -b -p /tmp/miniconda3 && \
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && sh Miniconda3-latest-Linux-x86_64.sh -u -b -p /tmp/miniconda3 && \
 
 # Clone swift jupyter repo
 git clone https://github.com/google/swift-jupyter.git && cd swift-jupyter && \
@@ -29,4 +29,4 @@ python register.py \
 conda env export --name swift-toolchain --file ~/swiftKernel.yml && \
 
 # Cleanup temp files
-rm -rf ~/swiftKernel
+rm -rf swift-tensorflow.tar.gz
