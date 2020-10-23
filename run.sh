@@ -13,9 +13,9 @@ mkdir swift-toolchain && \
 tar -zxvf swift-tensorflow.tar.gz -C swift-toolchain && \
 
 # Creates the new tensorflow env
-conda init bash && \
 conda create -n swift-tensorflow python=3.6 --yes && \
-conda activate swift-tensorflow --yes && \
+. /tmp/miniconda3/etc/profile.d/conda.sh && \
+conda activate swift-tensorflow && \
 conda install jupyter numpy matplotlib --yes && \
 
 # Register the kernel
