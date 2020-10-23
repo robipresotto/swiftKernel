@@ -23,10 +23,10 @@ python register.py \
 --sys-prefix \
 --swift-python-use-conda \
 --use-conda-shared-libs \
---swift-toolchain ./swift-toolchain
+--swift-toolchain ./swift-toolchain && \
 
 # Export env
-conda env export --name swift-toolchain --file ~/swiftKernel.yml
+conda env export --name swift-toolchain --file ~/swiftKernel.yml && \
 
-# Cleanup /tmp
-rm -rf /tmp
+# Cleanup temp files
+rm -rf ~/swiftKernel
